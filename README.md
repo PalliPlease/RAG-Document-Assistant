@@ -10,4 +10,4 @@ A RAG chain that connects the retriever to an LLM
 
 A Streamlit interface where users can ask questions
 
-No external APIs are required — everything runs locally using Ollama.
+No external APIs are required, everything runs locally using Ollama.
