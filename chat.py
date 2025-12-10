@@ -40,9 +40,9 @@ def build_qa_chain():
     )
 
     prompt = ChatPromptTemplate.from_template(
-        """You are a helpful assistant for answering questions about a college handbook.
+        """You are a helpful assistant for answering questions from a pdf file.
         Use ONLY the provided context to answer. If the answer is not in the context,
-        say you don't know and suggest where the student might check (e.g., admin office, website).
+        say you don't know and suggest where to look for that information.
         
         Context:
         {context}
@@ -50,7 +50,7 @@ def build_qa_chain():
         Question:
         {question}
         
-        Answer in a clear, concise way, suitable for a student."""
+        Answer in a clear and concise way."""
     )
 
     qa_chain = (
